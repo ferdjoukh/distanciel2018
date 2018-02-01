@@ -3,6 +3,7 @@ import { ajouterVilleAuPays } from "./Villes";
 
 //Creation d'une ville
 let paris:V.Ville={nom: 'Paris',pays: 'France', anneeFondation: -100, population:2000000};
+let nantes:V.Ville={nom: 'Nantes',pays: 'France', anneeFondation: 120, population:300000};
 let bejaia:V.Ville={nom: 'Bejaia',pays: 'Algerie', anneeFondation: -25, population:200000};
 
 
@@ -10,3 +11,4 @@ let villesDeFrance=Array();
 let france:V.Pays={nom: 'France',capitale:paris,villesDuPays:villesDeFrance};
 
 ajouterVilleAuPays(france,paris);
+ajouterVilleAuPays(france,nantes);
