@@ -13,7 +13,7 @@ export interface Pays{
 
 export function villeValide(v:Ville):boolean{
 
-    if(v.anneeFondation<-2000 && v.anneeFondation<2018 && v.population > 500){
+    if(v.anneeFondation<2018 && v.population > 500){
         return true;
     }
     else{
@@ -30,6 +30,6 @@ export function ajouterVilleAuPays(p:Pays,v:Ville){
     if(villeValide(v)){
         p.villesDuPays.push(v);
     }else{
-        console.error(v+" n'est pas une ville valide");
+        console.error(v.nom+" n'est pas une ville valide");
     }
 }
