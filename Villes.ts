@@ -31,7 +31,7 @@ export function ajouterVilleAuPays(p:Pays,v:Ville){
         if(p.nom==v.pays){
             p.villesDuPays.push(v);
         }else{
-            console.error(v.nom+" n'est pas une ville du pays"+ p.nom);    
+            console.error(v.nom+" n'est pas une ville du pays "+ p.nom);    
         }
     }else{
         console.error(v.nom+" n'est pas une ville valide");

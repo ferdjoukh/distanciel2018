@@ -12,3 +12,4 @@ let france:V.Pays={nom: 'France',capitale:paris,villesDuPays:villesDeFrance};
 
 ajouterVilleAuPays(france,paris);
 ajouterVilleAuPays(france,nantes);
+ajouterVilleAuPays(france,bejaia);
